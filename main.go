@@ -8,10 +8,15 @@ import (
 func main() {
 	fmt.Println("Kawan Lama")
 	var s string = "USOMAANAPAIUMASYDNIP"
+	siapaSearch(s)
+}
+
+func siapaSearch(input string) {
+
 	var sArr []string
-	for i := 0; i < len(s); i++ {
-		if string(s[i]) == "S" || string(s[i]) == "I" || string(s[i]) == "A" || string(s[i]) == "P" {
-			sArr = append(sArr, string(s[i]))
+	for i := 0; i < len(input); i++ {
+		if string(input[i]) == "S" || string(input[i]) == "I" || string(input[i]) == "A" || string(input[i]) == "P" {
+			sArr = append(sArr, string(input[i]))
 		}
 	}
 	var maybeCount int
